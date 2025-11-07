@@ -5,9 +5,10 @@ const Genre = {
 }
 
 const GenreLabel = {
-    [Status.FICTION]: `Просмотрено`,
-    [Status.SCIENCE]: `Не просмотрено`,
+    [Status.FICTION]: `Выполнено`,
+    [Status.SCIENCE]: `Не выполнено`,
 
 }
+
 
 export {Genre, GenreLabel};
