@@ -2,15 +2,16 @@ export const books = [
 
         {
         id: 1,
-        author: "author2",
-        title: "name2",
+        author: "Выполнено",
+        title: "Выпить с утра кофе",
         genre: "Выполнено"
     },
         {
         id: 2,
-        author: "author1",
-        title: "name4",
+        author: "Не выполнено",
+        title: "Выполнить дз",
         genre: "Не выполнено"
     }
 ]
+
 
