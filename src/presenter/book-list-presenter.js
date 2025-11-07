@@ -26,7 +26,7 @@ export default class BookListPresenter{
         const bookitle = document.getElementById('book-title').value.trim();
         const bookAuthor = document.getElementById('book-author').value.trim();
         const bookGenre = document.getElementById('book-genre').value.trim();
-        if(!bookitle && !bookAuthor && (bookGenre != "Выбрать жанр")){
+        if(!bookitle && !bookAuthor && (bookGenre != "Отметить как")){
             return;
         }
         this.#booksModel.addBook(bookitle, bookAuthor, bookGenre);
@@ -39,7 +39,7 @@ export default class BookListPresenter{
         const bookitle = document.getElementById('book-title-edit').value.trim();
         const bookAuthor = document.getElementById('book-author-edit').value.trim();
         const bookGenre = document.getElementById('book-genre-edit').value.trim();
-        if(!bookitle && !bookAuthor && (bookGenre != "Выбрать жанр")){
+        if(!bookitle && !bookAuthor && (bookGenre != "Отметить как")){
             return;
         }
         this.#booksModel.editBook(bookitle, bookAuthor, bookGenre, task.id);
@@ -134,4 +134,5 @@ export default class BookListPresenter{
         this.#clearBoard();
         this.#renderBoard();
     }
+
 }
